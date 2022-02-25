@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9193324559.js" crossorigin="anonymous"></script>
+    <title>DeliciasGourmet</title>
+    <link rel="stylesheet" href="css.css">
+
 </head>
-<body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam rem earum quisquam, delectus reiciendis similique dolore vitae eaque tenetur, excepturi sit consequuntur voluptatum, quibusdam rerum ducimus est nulla dolores quo.</p>
+<body onclick="clicar">
+  <header>
+    <div class="center">
+        <div class="logo"><a href="">EM HJS</a></div>
+        <div class="menu">
+            <a href="">Inicio</a>
+            <a href="#">Projetos</a>
+            <a href="#">Contato</a>
+           
+        </div>
+         
+    </div>
+</header>
+
+    <section class="sobre">
+        <div class="extras">
+            <img src="imagens/CIENCIAS.jpg" alt="" class="materiais">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a> <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>            </div>
+
+        </div>
+        <div class="center">
+            <div class="texto-sobre">
+                <h1>EM Henrique José<br> <span style="color: rgb(82, 82, 82);font-weight: 700;"> De Souza</span></h1> 
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ut laborum vero? <br> Cum, voluptas tempore? Laudantium nobis iste aliquam quia sed deleniti. <br><br> Rua Cidade do Sol, 370. Cidade do Sol, Juiz de Fora - MG 36085-350</p>
+                 <a href="mais.html"><button>Saiba Mais</button></a>
+                </div>
+                
+        </div>
+        <ul class="boloss"> 
+            <li><img src="imagens/download.jpeg" alt="" onclick="slider('download.jpeg');changeColor('gray')"></li>
+            <li><img src="imagens/download (1).jpeg"  alt="" onclick="slider('download (1).jpeg');changeColor('black')"></li>
+            <li><img src="imagens/download (2).jpeg" alt="" onclick="slider('download (2).jpeg');changeColor('gray')"></li>
+            <li><img src="imagens/Matematica-1200x675.jpeg" alt="" onclick="slider('Matematica-1200x675.jpeg');changeColor('black')"></li>
+            <li><img src="imagens/geo.jpg" alt="" onclick="slider('geo.jpg');changeColor('gray')"></li>
+            <li><img src="imagens/CIENCIAS.jpg" alt="" onclick="slider('CIENCIAS.jpg');changeColor('black')"></li>
+            <li><img src="imagens/ARTE.jpg" alt="" onclick="slider('ARTE.jpg');changeColor('gray')"></li>
+
+
+        </ul>
+    </section>
+    <script>
+        function slider(anything) {
+            document.querySelector('.materiais').src = anything
+        }
+        function changeColor(color){
+            const extras = document.querySelector('.extras');
+            extras.style.background = color;
+
+        }
+
+        
+    </script>
 </body>
 </html>

@@ -1,0 +1,305 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(255, 255, 255) ;
+}
+
+p{
+    color: rgba(0, 0, 0, 0.658);
+    padding: 25px;
+}
+
+.nav-bar{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    transition: 1s ease;
+}
+.nav-bar a:hover{
+    letter-spacing: -0.9px;
+    color: rgb(121, 121, 121);
+}
+main {
+    
+    margin: auto;
+    background-image: linear-gradient(to left, rgba(128, 128, 128, 0.486), white, rgba(128, 128, 128, 0.507));
+    padding:25px;
+    box-shadow: 0px 2px 2px 0px  rgba(128, 128, 128, 0.301);
+    border-radius: 0px 0px 5px 5px;
+}
+.material-escolar {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.5s all ease;
+    border: solid 1px rgb(70, 0, 0);
+}
+.material-escolar:hover{
+    background-color: rgba(128, 128, 128, 0.363);
+}
+.material-escolar a{
+    text-decoration: none;
+
+}
+.material h1{
+    color: rgb(124, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.list-material img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.list-material{
+    display: flex;
+    
+}
+
+.list-material p{
+    margin-top: 40px;
+    font-size: 1.2em;
+    padding: 25px;
+    
+}
+/* Jornal */
+
+.Jornal-escolar{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.5s all ease;
+    border: solid 1px rgb(70, 0, 0);
+}
+.Jornal-escolar:hover{
+    background-color: rgba(128, 128, 128, 0.363);
+}
+.Jornal-escolar a{
+    text-decoration: none;
+
+}
+.jornal h1{
+    color: rgb(124, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.list-jornal img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.list-jornal{
+    display: flex;
+    
+}
+
+.list-jornal p{
+    margin-top: 30px;
+    font-size: 1.2em;
+    padding: 25px;
+}
+
+/*Prefeitura*/
+
+.prefeitura-escolar{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.5s all ease;
+    border: solid 1px rgb(70, 0, 0);
+}
+.prefeitura-escolar:hover{
+    background-color: rgba(128, 128, 128, 0.363);
+}
+.prefeitura-escolar a{
+    text-decoration: none;
+
+}
+.prefeitura h1{
+    color: rgb(124, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.list-prefeitura img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid rgba(0, 0, 0, 0.363) 1.9px;
+}
+.list-prefeitura{
+    display: flex;
+    
+}
+
+.list-prefeitura p{
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 25px;
+}
+
+/*Atividades*/
+
+.atividades-escolar{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.5s all ease;
+    border: solid 1px rgb(70, 0, 0);
+}
+.atividades-escolar:hover{
+    background-color: rgba(128, 128, 128, 0.363);
+}
+.atividades-escolar a{
+    text-decoration: none;
+
+}
+.atividades h1{
+    color: rgb(124, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.list-atividades img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.list-atividades{
+    display: flex;
+    
+}
+
+.list-atividades p{
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 25px;
+}
+
+/*Footer*/
+
+.final p{
+    text-align: center;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.658);
+}
+.final {
+    background-color: rgba(235, 227, 217, 0.699);
+    width: 100%;
+}
+
+
+/*Responsividade*/
+
+@media (max-width:800px) {
+    .nav-bar a{
+        font-size: 1em;
+    }
+    .list-atividades{
+        display:block;
+    }
+    .list-jornal{
+        display: block;
+    }
+    .list-material{
+        display: block;
+    }
+    .list-prefeitura{
+        display: block;
+    }
+    .list-atividades p{
+     font-size: 1em;
+     padding: 5px;
+    }
+    .list-jornal p{
+        font-size: 1em;
+        padding: 5px;
+    } 
+    .list-material p{
+        font-size: 1em;
+        padding: 5px;
+    }
+    .list-prefeitura p{
+        font-size: 1em;
+        padding: 5px;
+    }
+    .prefeitura h1{
+        font-size: 0.8em;
+    
+    }    
+    .list-jornal{
+        display: block;
+    }
+    .list-material{
+        display: block;
+    }
+    .list-prefeitura{
+        display: block;
+    }
+    .list-atividades img{
+         width: 80%;
+         height: 80%;
+         margin-left: 10%;
+         margin-right: 10%;
+         margin-top: 7%;
+    }
+    .atividades h1{
+        font-size: 1.3em;
+    }
+    .list-jornal img{
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 7%;
+
+   }
+   .jornal h1{
+       font-size: 1.3em;
+   }
+   .list-material img{
+    width: 80%;
+    border-radius: 100%;
+    height:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+
+   }
+   .material h1{
+    font-size: 1.3em;
+   }
+   .list-prefeitura img{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+
+   }
+   .prefeitura h1{
+    font-size: 1.3em;
+   }
+   
+   
+   
+   
+    /*footer*/
+    .final p{
+        margin-left:0 ;
+        font-size: 0.7em;
+    }
+    .final{
+        width: 100%;
+        display: block;
+    }
+}
